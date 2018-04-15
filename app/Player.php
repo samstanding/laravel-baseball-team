@@ -8,4 +8,6 @@ class Player extends Model
     {
         return $this->belongsTo(Types::class);
     }
+
+    // 
 }

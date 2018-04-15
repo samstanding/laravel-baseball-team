@@ -10,7 +10,7 @@ class PlayerController extends Controller
 {
     public function index() 
     {
-        $players = Player::latest()->get();
+        $players = Player::join('types', 'types.id', '=', 'players.types_id')->get();
 
         return view ('players.index', compact('players'));
     }
