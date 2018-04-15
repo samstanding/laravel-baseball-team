@@ -8,3 +8,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/players', 'PlayerController@index');
+
+Route::get('/players/create', 'PlayerController@create');
+
+Route::post('/create', 'PlayerController@store');
