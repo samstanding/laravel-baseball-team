@@ -10,7 +10,6 @@
          @include('players.players')
     @endforeach
             </div>
-        </div>
     </div>
 </div>
 

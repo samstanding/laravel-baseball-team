@@ -12,3 +12,7 @@ Route::get('/players', 'PlayerController@index');
 Route::get('/players/create', 'PlayerController@create');
 
 Route::post('/create', 'PlayerController@store');
+
+Route::get('/players/types', 'TypesController@index' );
+
+Route::get('/types/{type}', 'TypesController@show');
