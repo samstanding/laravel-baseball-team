@@ -19,7 +19,7 @@ class CreatePlayersTable extends Migration
             $table->string('last_name');
             $table->string('position');
             $table->integer('types_id');
-            $table->boolean('active')->default(false);
+            $table->boolean('active')->default(false)->when('types_id' === 3)->set(true);
             $table->timestamps();
         });
     }

@@ -16,3 +16,5 @@ Route::post('/create', 'PlayerController@store');
 Route::get('/players/types', 'TypesController@index' );
 
 Route::get('/types/{type}', 'TypesController@show');
+
+Route::get('/players/{id}', 'PlayerController@show');

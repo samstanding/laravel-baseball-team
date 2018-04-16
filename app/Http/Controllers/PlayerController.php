@@ -34,4 +34,10 @@ class PlayerController extends Controller
  
          return redirect('/players');
     }
+
+    public function show($id) 
+    {
+        $player = Player::join('types', 'types.id', '=', 'players.types_id')->find($id);
+        return view ('players.show', compact('player'));
+    }
 }

@@ -8,10 +8,8 @@
         <h1>Welcome to Your Team</h1>
         <table class="table">
 <thead>
-<th> First Name</th>
-<th> Last Name </th>
+<th>  Name </th>
 <th> Position </th>
-<th> Activated? </th>
 <th> Status </th>
 </thead>
 <tbody>
